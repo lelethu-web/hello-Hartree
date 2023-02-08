@@ -1,10 +1,11 @@
 name: hello-Nick
 'on': push
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: run app
         run: echo "Hello Hartree and Nick!"
       - name: check out
         uses: actions/checkout@v3
+        
