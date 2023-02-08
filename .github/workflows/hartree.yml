@@ -4,5 +4,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+      - name: run app
+        run: echo "Hello Hartree and Nick!"
+      - name: check out
+        uses: actions/checkout@v3
