@@ -21,12 +21,14 @@ jobs:
           uses: actions/setup-python@v2
           with:
             python-version: "3.8"
+          
+          
             
         - name: run the Python script
-          
-          run: |
+          run : python3
+          env : |
 
-               python('read_me.txt', 'w') as f:
+               open('read_me.txt', 'w') as f:
                     f.write('create a new text file!')
             
        
