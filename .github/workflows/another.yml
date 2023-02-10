@@ -31,9 +31,6 @@ jobs:
           
    test:
        runs-on: ubuntu-latest
-       needs: build
-       
-       
        steps:
           - name: list all new files
             run: ls -l
