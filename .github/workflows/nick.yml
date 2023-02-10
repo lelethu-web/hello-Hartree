@@ -23,7 +23,12 @@ jobs:
             python-version: "3.8"
             
         - name: run the Python script
-          run: python python_script.py
+          with: 
+           script: |
+                with open('read_me.txt' , 'w'} as f;
+                      f.write('Create a new text file!')
+          
+          
    test:
        runs-on: ubuntu-latest
        needs: build
