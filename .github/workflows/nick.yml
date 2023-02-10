@@ -1,0 +1,25 @@
+name: assesment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]  
+    
+jobs:
+   build:
+        runs-on: ubuntu-latest
+        
+        steps:
+        - uses: actions/checkout@v2
+        
+        - name: list all existing files
+          run : ls -l
+          
+        - name: Install pythin
+          uses: actions/setup-python@v2
+          with:
+            python-version: "3.8"
+        
+   
+    
