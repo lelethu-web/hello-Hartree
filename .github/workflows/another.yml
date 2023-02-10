@@ -26,9 +26,9 @@ jobs:
             
         - name: run the Python script
           run : python3
-          env : |
-
-               open('read_me.txt', 'w') as f:
+          env: |
+ 
+              with open('read_me.txt', 'w') as f:
                     f.write('create a new text file!')
             
        
