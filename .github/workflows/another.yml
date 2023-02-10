@@ -31,7 +31,11 @@ jobs:
           
    test:
        runs-on: ubuntu-latest
+       
        steps:
+       
+          - uses: actions/checkout@v2
+          
           - name: list all new files
             run: ls -l
        
