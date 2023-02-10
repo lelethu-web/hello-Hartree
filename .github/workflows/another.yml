@@ -25,7 +25,7 @@ jobs:
         - name: run the Python script
           
           run: |
-                with open('read_me.txt' , 'w'} as f;
+                with open('read_me.txt' , 'w') as f;
                       f.write('Create a new text file!')
             
        
