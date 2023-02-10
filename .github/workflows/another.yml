@@ -25,11 +25,11 @@ jobs:
           
             
         - name: run the Python script
-          uses: actions/checkout@v3
-          with: 
-               python-version: 'pypy3.9'
-        - run: | 
-                 f = open("myfile.txt", "x")
+          run: new_file.py
+          
+        - name: list new file
+          run: ls -l
+
             
        
        
