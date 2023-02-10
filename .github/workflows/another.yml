@@ -35,8 +35,6 @@ jobs:
        
        
        steps:
-       
-         - uses: actions/checkout@v2
-         - name: list all new files
-           run: ls -l
+          - name: list all new files
+            run: ls -l
        
