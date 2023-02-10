@@ -28,14 +28,5 @@ jobs:
                 with open('read_me.txt' , 'w'} as f;
                       f.write('Create a new text file!')
           
-          
-   test:
-       runs-on: ubuntu-latest
-       
-       steps:
-       
-          - uses: actions/checkout@v2
-          
-          - name: list all new files
-            run: ls -l
+
        
