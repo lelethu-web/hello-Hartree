@@ -23,14 +23,14 @@ jobs:
             
         - name: run the Python script
           run: python_script.py
-          
-jobs:
+   test:
+       runs-on: ubuntu-latest
+       needs: build
+       steps:
+       - name: list all new files
+         run: ls -l
+       
 
-  test:
-                 
-     steps:
-      - name : List all new fules
-        run: ls -l
       
           
             
