@@ -1,0 +1,38 @@
+name: assesment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]  
+    
+jobs:
+   build:
+        runs-on: ubuntu-latest
+        
+        steps:
+        - uses: actions/checkout@v2
+        
+        - name: list all existing files
+          run : ls -l
+
+          
+        - name: Install python
+          uses: actions/setup-python@v2
+          with:
+            python-version: "3.8"
+            
+        - name: run the Python script
+          with: 
+           script: |
+                with open('read_me.txt' , 'w'} as f;
+                      f.write('Create a new text file!')
+          
+          
+   test:
+       runs-on: ubuntu-latest
+       needs: build
+       steps:
+       - name: list all new files
+         run: ls -l
+       
