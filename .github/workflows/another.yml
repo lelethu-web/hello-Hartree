@@ -23,8 +23,8 @@ jobs:
             python-version: "3.8"
             
         - name: run the Python script
-          with: 
-           script: |
+          
+          run: |
                 with open('read_me.txt' , 'w'} as f;
                       f.write('Create a new text file!')
             
