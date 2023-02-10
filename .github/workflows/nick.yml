@@ -16,10 +16,28 @@ jobs:
         - name: list all existing files
           run : ls -l
           
-        - name: Install pythin
+        - name: Install python
           uses: actions/setup-python@v2
           with:
             python-version: "3.8"
+            
+        - name: run the Python script
+          run: python_script.py
+          
+jobs:
+
+  test:
+                 
+     steps:
+      - name : List all new fules
+        run: ls -l
+      
+          
+            
+            
+ 
+      
+   
         
    
     
